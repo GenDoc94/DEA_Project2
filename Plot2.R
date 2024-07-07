@@ -10,7 +10,7 @@ balt_TE_Y <- aggregate(Emissions ~ year, balt, sum)
 png("./plot/Plot2.png")
 par(mai = c(0.9, 0.9, 0.9, 0.9))
 barplot(
-        balt_TEY$Emissions/10^3,
+        balt_TE_Y$Emissions/10^3,
         names.arg=balt_TE_Y$year, 
         col = "darkblue", 
         ylim = c(0,4),
