@@ -1,5 +1,6 @@
 #LOADING LIBRARIES
 library(dplyr)
+library(ggplot2)
 
 #CREATING FOLDERS
 if(!file.exists("./data")) {
@@ -22,3 +23,4 @@ SCC <- readRDS("./data/Source_Classification_Code.rds")
 
 #MODIFING BASE
 NEI$year <- factor(NEI$year)
+NEI$type <- factor(NEI$type)
